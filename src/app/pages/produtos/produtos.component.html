@@ -14,7 +14,7 @@
     <tr *ngFor="let produto of produtos">
       <th scope="row">{{ produto.id }}</th>
       <td>{{ produto.nome }}</td>
-      <td>{{ produto.codigoDeBarras }}</td>
+      <td>{{ produto.codigoBarras }}</td>
       <td class="text-center">
         <i *ngIf="produto.preco else elseBlock" class="bi bi-hand-thumbs-up-fill text-success"></i>
         <ng-template #elseBlock>
