@@ -7,7 +7,7 @@ import { IProduto } from '../interfaces/produto';
 })
 export class ProdutosService {
 
-  api = '';
+  api = 'http://localhost:8080/api/produtos';
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +17,18 @@ export class ProdutosService {
 
   cadastrarProduto(produto: Partial<IProduto>) {
     return this.http.post(this.api, produto)
+  }
+
+  deletarProduto(id: number) {
+    return this.http.delete<IProduto>(`${this.api}/${id}`);
+  }
+
+  buscarPorId(id: number) {
+    return this.http.get<IProduto>(`${this.api}/${id}`);
+  }
+
+  editarProduto(id: number, produto: Partial<IProduto>) {
+    return this.http.put<IProduto>(`${this.api}/${id}`, produto);
   }
 
 }

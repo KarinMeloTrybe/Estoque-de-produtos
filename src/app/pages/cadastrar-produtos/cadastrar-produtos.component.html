@@ -1,4 +1,4 @@
-<h1 class="mt-3 mb-3" align="center">Cadastrar Produtos</h1>
+<h1 class="mt-3 mb-3 text-center">Cadastrar Produtos</h1>
 <form [formGroup]="produtoForm" (submit)="enviar()">
   <div class="container" style="max-width: 40vw">
     <div class="offset">
@@ -15,11 +15,11 @@
         </div>
         <div class="mb-3">
           <label for="preco" class="form-label">Preço</label>
-          <input type="text" class="form-control" id="preco" formControlName="preco" >
+          <input type="number" class="form-control" id="preco" formControlName="preco" >
         </div>
       </div>
     </div>
-    <a class="btn btn-secondary me-1" routerLink="/usuarios">Voltar</a>
+    <a class="btn btn-secondary me-1" routerLink="/produtos">Voltar</a>
     <button class="btn btn-primary" type="submit" [disabled]="produtoForm.invalid">Cadastrar</button>
   </div>
 </form>
