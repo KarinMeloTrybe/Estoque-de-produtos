@@ -6,16 +6,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" :focus [routerLinkActiveOptions]="{ exact: true }">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/produtos" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Produtos</a>
+          <a class="nav-link" routerLink="/produtos" routerLinkActive="active" :focus  [routerLinkActiveOptions]="{ exact: true }">Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/produtos/cadastrar" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Cadastro de Produtos</a>
+          <a class="nav-link" routerLink="/produtos/cadastrar" routerLinkActive="active" :focus  [routerLinkActiveOptions]="{ exact: true }">Cadastro de Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="produtos/editar/:id" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Edição de Produtos</a>
+          <a class="nav-link" routerLink="produtos/editar/:id" routerLinkActive="active" :focus  [routerLinkActiveOptions]="{ exact: true }">Edição de Produtos</a>
         </li>
       </ul>
     </div>

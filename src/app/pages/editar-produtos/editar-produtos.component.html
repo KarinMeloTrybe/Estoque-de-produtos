@@ -6,7 +6,7 @@
       <div class="col">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" formControlName="nome">
+          <input type="text" class="form-control :focus" id="nome" formControlName="nome">
         </div>
       </div>
       <div class="col">
@@ -16,9 +16,12 @@
         </div>
         <div class="mb-3">
           <label for="preco" class="form-label">Preço</label>
-          <input type="number" class="form-control" id="preco" formControlName="preco" >
+          <input type="text" class="form-control" id="preco" formControlName="preco" >
         </div>
       </div>
     </div>
-
-<a class="btn btn-primary" type="submit" routerLink="/produtos">Salvar</a>
+  </div>
+<div class="text-center">
+  <button class="btn btn-primary" type="submit">Salvar</button>
+</div>
+ </form>

@@ -28,7 +28,7 @@ export class ProdutosService {
   }
 
   editarProduto(produto: Partial<IProduto>) {
-    return this.http.put<IProduto>(`${this.api}/${produto.id}`, produto);
+    return this.http.put<IProduto>(`${this.api}`, produto);
   }
 
 }
