@@ -36,10 +36,12 @@ export class ProdutosComponent {
       cancelButtonText: 'Não, cancelar'
     }).then((resposta) =>{
       if(resposta.isConfirmed){
-       this.produtos = this.produtos.filter((produto) => produto.id !== id);  
-      }
+       this.produtosService.deletarProduto(id).subscribe(
+        () => {
+          this.produtos = this.produtos.filter((produto) => produto.id !== id);
+        }  
+    )}
     })
    
   }
-
 }
